@@ -1,10 +1,16 @@
 const hole = document.querySelectorAll('.hole');
 const mole = document.querySelectorAll('.mole');
+const startButton = document.getElementById('start-game');
+const soundButton = document.getElementById('sound-effect');
+const musicButton = document.getElementById('music');
 const timeRemaining = document.getElementById('time-Remaining');
+const pop = document.getElementById('pop');
 let score = document.querySelector('#score');
 let result = 0;
 let currentTime = parseInt(timeRemaining.textContent);
 console.log(currentTime);
+const moleGame = (e) =>{
+
 const randomHole = () => {
     hole.forEach(className =>{
         className.classList.remove('mole');
@@ -40,5 +46,9 @@ const countDown = () =>{
      alert(`Game Over! Your final score is ${result}`);
    }
 }
-let timerId = setInterval(countDown, 1000);
+let timerId = setInterval(countDown, 1000)
+
+
 moveMole();
+}
+startButton.onclick = moleGame;
