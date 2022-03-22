@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Whack-A-Mole</title>
-</head>
-<body>
- <h1>Whack-A-Mole</h1> 
- <div id="control">
-    <button class="button"  id="start-game" type="button">Start Game</button>
-    <button class="button" id="sound-effect"type="button">Sound Effect OFF</button>
-    <button class="button" id="music" type="button">Music OFF</button>
- </div>  
- <h2 id="score">Score:</h2>
- <h2>Seconds Remaining</h2>
- <h2 id="time-Remaining">60</h2>
- 
- <main>
- <div class="grid-container">
-     <div class="hole" id="1"></div>
-     <div class="hole" id="2"></div>
-     <div class="hole" id="3"></div>
-     <div class="hole" id="4"></div>
-     <div class="hole" id="5"></div>
-     <div class="hole" id="6"></div>
-     <div class="hole" id="7"></div>
-     <div class="hole" id="8"></div>
-     <div class="hole" id="9"></div>
- </div>
- </main>
- 
-  <audio id="background" src="sounds/Monkeys-Spinning-Monkeys.mp3"></audio>
+  </head>
+  <body>
+    <h1>Whack-A-Mole</h1>
+    <div id="mute-bar">
+      <h4>Sound Effect ON/OFF</h4>
+      <audio
+        controls
+        muted
+        id="pop"
+        type="audio/mp3"
+        src="sounds/woodwhack.wav"
+      ></audio>
+    </div>
+    <div id="control">
+      <button class="button" id="start-game" type="button">Start Game</button>
+      <button class="button" id="music" type="button">Music on/off</button>
+    </div>
+    <h2 id="score">Score:</h2>
+    <h2>Seconds Remaining</h2>
+    <h2 id="time-Remaining">60</h2>
 
- <audio id="pop" src="sounds/woodwhack.wav"></audio>  
-     
-    
- <!-- Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
+    <main>
+      <div class="grid-container">
+        <div class="hole" id="1"></div>
+        <div class="hole" id="2"></div>
+        <div class="hole" id="3"></div>
+        <div class="hole" id="4"></div>
+        <div class="hole" id="5"></div>
+        <div class="hole" id="6"></div>
+        <div class="hole" id="7"></div>
+        <div class="hole" id="8"></div>
+        <div class="hole" id="9"></div>
+      </div>
+    </main>
+
+    <audio id="background" src="sounds/Monkeys-Spinning-Monkeys.mp3"></audio>
+
+    <!-- Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0 License
 http://creativecommons.org/licenses/by/3.0/
 Music promoted by https://www.chosic.com/free-music/all/  -->
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>
