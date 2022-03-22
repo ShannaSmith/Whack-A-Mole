@@ -8,10 +8,16 @@
     <title>Whack-A-Mole</title>
 </head>
 <body>
- <h1>Whack-A-Mole</h1>   
+ <h1>Whack-A-Mole</h1> 
+ <div id="control">
+    <button class="button"  id="start-game" type="button">Start Game</button>
+    <button class="button" id="sound-effect"type="button">Sound Effect OFF</button>
+    <button class="button" id="music" type="button">Music OFF</button>
+ </div>  
  <h2 id="score">Score:</h2>
  <h2>Seconds Remaining</h2>
  <h2 id="time-Remaining">60</h2>
+ 
  <main>
  <div class="grid-container">
      <div class="hole" id="1"></div>
@@ -25,16 +31,15 @@
      <div class="hole" id="9"></div>
  </div>
  </main>
- <aside>
-     <button class="button"  id="start-game" type="button">Start Game</button>
-     <button class="button" id="sound-effect"type="button">Sound Effect OFF</button>
-     <button class="button" id="music" type="button">Music OFF</button>
- </aside>
- <audio>
-     <source id="pop" src="sounds/woodwhack.wav"></source>
+ 
+  <audio id="background" src="sounds/Monkeys-Spinning-Monkeys.mp3"></audio>
+ <audio id="pop" src="sounds/woodwhack.wav"></audio>  
      
-    </audio>
- </audio>
+    
+ <!-- Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+Music promoted by https://www.chosic.com/free-music/all/  -->
 </body>
 <script src="index.js"></script>
 </html>

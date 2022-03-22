@@ -5,12 +5,13 @@ const soundButton = document.getElementById('sound-effect');
 const musicButton = document.getElementById('music');
 const timeRemaining = document.getElementById('time-Remaining');
 const pop = document.getElementById('pop');
+const background = document.getElementById('background');
 let score = document.querySelector('#score');
 let result = 0;
 let currentTime = parseInt(timeRemaining.textContent);
 console.log(currentTime);
 const moleGame = (e) =>{
-
+background.play();
 const randomHole = () => {
     hole.forEach(className =>{
         className.classList.remove('mole');
@@ -26,6 +27,7 @@ console.log(hole);
 hole.forEach(id => {
     id.addEventListener('mouseover', () =>{
         if(id.id === hitPosition){
+            pop.play();
             result += 10;
             score.textContent = result;
             console.log(result);
@@ -47,7 +49,13 @@ const countDown = () =>{
    }
 }
 let timerId = setInterval(countDown, 1000)
-
+const playMusic = () =>{
+    pop.play();
+}
+const backgroundMusic = () =>{
+    background.play();
+}
+const effectSound = new Audio("/sounds/woodwack.wav")
 
 moveMole();
 }
