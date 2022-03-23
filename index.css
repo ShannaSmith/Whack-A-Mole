@@ -1,50 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+.hole {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-style: dashed;
+  border-color: rgb(144, 98, 19);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2em;
+  background-image: url("https://i.imgur.com/FQg4lTE.jpg");
+}
+.mole {
+  background-image: url("img/Mole.png");
+  background-size: cover;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 
-     
-  *{
-      box-sizing: border-box;
-  }
-  .hole{
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      border-style:dashed;
-      /* background-color: rgb(59, 34, 14); */
-      border-color: rgb(144, 98, 19);
-  }
-  .grid-container{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      row-gap:2em;
-       background-image: url("https://i.imgur.com/FQg4lTE.jpg"); 
-  }
-  .mole{
-      background-image:url("img/Mole.png");
-      background-size:cover; 
-  }
-  .button {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-  aside{
-      display:block;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      row-gap: 1em;
-  }
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body {
+  background-color: rgb(234, 183, 122);
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+}
+#mute-bar {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#end-message {
+  display: flex;
+}
+#control {
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-end;
+  background-color: rgb(203, 195, 141);
+}
+.screen {
+  background-color: rgb(141, 138, 103);
+}
