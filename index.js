@@ -5,12 +5,14 @@ const musicButton = document.getElementById("music");
 const timeRemaining = document.getElementById("time-Remaining");
 const pop = document.getElementById("pop");
 const background = document.getElementById("background");
+const gameOver = document.createElement('p');
 
 let score = document.querySelector("#score");
 let result = 0;
 let currentTime = parseInt(timeRemaining.textContent);
 
 const moleGame = (e) => {
+  gameOver.innerText ='';
   const randomHole = () => {
     hole.forEach((className) => {
       className.classList.remove("mole");
@@ -26,26 +28,36 @@ const moleGame = (e) => {
         pop.play();
         result += 10;
         score.textContent = result;
+        
       }
     });
   });
-  const moveMole = () => {
-    let timerId = null;
-    if (currentTime > 0) {
-      timerId = setInterval(randomHole, 2000);
-    } else {
-      return false;
-    }
-  };
+ 
+  let moleTimerId = setInterval(randomHole, 2000);
+  //const moveMole = () => {
+  //  let timerId = null;
+   // if(currentTime > 0) {
+    
+   //   console.log(currentTime);
+  //  } 
+    
+ // };
 
+ const endGameScreen = () => {
+  gameOver.innerText = `GAME OVER! You whacked ${result/ 10} moles over the head! Happy gardening!`;
+ 
+ document.getElementById('end-message').appendChild(gameOver);
+
+document.getElementById('end-message').style.display = 'inline-block';
+};
   const countDown = () => {
     currentTime--;
     timeRemaining.textContent = currentTime;
-    console.log(currentTime);
-    if (currentTime < 0) {
+    if (currentTime === 0) {
       clearInterval(timerId);
-      alert(`Game Over! Your final score is ${result}`);
       background.pause();
+      clearInterval(moleTimerId);
+      endGameScreen();
     }
   };
   let timerId = setInterval(countDown, 1000);
@@ -58,10 +70,13 @@ const moleGame = (e) => {
     background.paused ? background.play() : stopBackgroundMusic();
     return;
   };
+  
   musicButton.addEventListener("click", backgroundMusic);
+  
+  
+ // moveMole();}
 
-  moveMole();
+  
 };
 startButton.addEventListener("click", moleGame);
 
-const endGameScreen = () => {};
