@@ -14,7 +14,7 @@ let result = 0;
 let currentTime = parseInt(timeRemaining.textContent);
 
 const moleGame = (e) => {
-  gameOver.innerText = "";
+  document.getElementById("end-message").style.display = "none";
   const randomHole = (e) => {
     hole.forEach((className) => {
       className.classList.remove("mole");
@@ -40,9 +40,7 @@ const moleGame = (e) => {
     currentTime = 60;
     gameOver.innerText = "GAME OVER!";
     gameScore.innerText = ` SCORE: ${result}`;
-    gameOverWhackCount.innerText = `You whacked ${
-      result / 10
-    } moles over the head! `;
+    gameOverWhackCount.innerText = `You whacked ${result / 10} moles over the head! `;
     gameOverMessage.innerText = "Happy gardening!";
     document.getElementById("end-message").appendChild(gameOver);
     document.getElementById("end-message").appendChild(gameScore);
@@ -52,18 +50,14 @@ const moleGame = (e) => {
     score.innerText = "";
     timeRemaining.textContent = 60;
     result = 0;
-    document
-      .querySelectorAll(".mole")
-      .forEach((e) => e.classList.remove("mole"));
-    // const newHole = document.createElement('div');
-    //const replacedDiv = document.
+    document.querySelectorAll(".mole").forEach((e) => e.classList.remove("mole"));
+    
   };
   const countDown = () => {
     currentTime--;
     timeRemaining.textContent = currentTime;
     if (currentTime === 0) {
       clearInterval(timerId);
-      // background.pause();
       clearInterval(moleTimerId);
       gameOverTask();
     }
