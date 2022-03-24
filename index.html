@@ -4,31 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="index.css" />
     <title>Whack-A-Mole</title>
   </head>
   <body>
-   
-    
-     
-      
-    
-    
-    
-    
-  </div>
     <h1>Whack-A-Mole</h1>
     <div id="end-message" class="screen" style="display: none"></div>
-   
-    
     <h2 id="score">Score: 000</h2>
-    <h2 class="time">Seconds Remaining:  </h2>
-    <h2 id="time-Remaining" class="time">3</h2>
-
+    <h2 class="time">Seconds Remaining:</h2>
+    <h2 id="time-Remaining" class="time">10</h2>
     <main>
       <div class="grid-container">
         <div class="hole" id="1"></div>
@@ -43,19 +34,19 @@
       </div>
     </main>
     <div id="control">
-    <button class="button" id="start-game" type="button">Start Game</button>
-    <button class="button" id="music" type="button">Music on/off</button>
-    <div id="mute-bar">
-      <h4>Sound Effect ON/OFF</h4>
-      <audio
-        controls
-        muted
-        id="pop"
-        type="audio/mp3"
-        src="sounds/woodwhack.wav"
-      ></audio>
-  </div>
-</div>
+      <button class="button" id="start-game" type="button">Start Game</button>
+      <button class="button" id="music" type="button">Music on/off</button>
+      <div id="mute-bar">
+        <h4>Sound Effect ON/OFF</h4>
+        <audio
+          controls
+          muted
+          id="pop"
+          type="audio/mp3"
+          src="sounds/woodwhack.wav"
+        ></audio>
+      </div>
+    </div>
     <audio id="background" src="sounds/Monkeys-Spinning-Monkeys.mp3"></audio>
 
     <!-- Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
