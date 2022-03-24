@@ -5,14 +5,18 @@ const musicButton = document.getElementById("music");
 const timeRemaining = document.getElementById("time-Remaining");
 const pop = document.getElementById("pop");
 const background = document.getElementById("background");
-const gameOver = document.createElement("p");
+const gameOver = document.createElement("h3");
+const gameScore = document.createElement("h3");
+const gameOverWhackCount =document.createElement("h3");
+const gameOverMessage = document.createElement("p");
 let score = document.querySelector("#score");
 let result = 0;
 let currentTime = parseInt(timeRemaining.textContent);
 
 const moleGame = (e) => {
+  
   gameOver.innerText = "";
-  const randomHole = () => {
+  const randomHole = (e) => {
     hole.forEach((className) => {
       className.classList.remove("mole");
     });
@@ -20,34 +24,48 @@ const moleGame = (e) => {
     let randomPosition = hole[Math.floor(Math.random() * 9)];
     randomPosition.classList.add("mole");
     hitPosition = randomPosition.id;
-  };
+  }
   hole.forEach((id) => {
     id.addEventListener("click", () => {
       if (id.id === hitPosition) {
         pop.play();
         result += 10;
-        score.textContent = result;
+        score.textContent = `Score: ${result}`;
       }
     });
   });
 
-  let moleTimerId = setInterval(randomHole, 2000);
+  let moleTimerId = setInterval(randomHole, 1000);
 
-  const endGameScreen = () => {
-    gameOver.innerText = `GAME OVER! You whacked ${
+  const gameOverTask = () => {
+  currentTime = 60;
+    gameOver.innerText = 'GAME OVER!';
+    gameScore.innerText = ` SCORE: ${result}`;
+    gameOverWhackCount.innerText = `You whacked ${
       result / 10
-    } moles over the head! Happy gardening!`;
+    } moles over the head! `;
+    gameOverMessage.innerText = 'Happy gardening!';
     document.getElementById("end-message").appendChild(gameOver);
-    document.getElementById("end-message").style.display = "inline-block";
+    document.getElementById("end-message").appendChild(gameScore);
+    document.getElementById("end-message").appendChild(gameOverWhackCount);
+    document.getElementById("end-message").appendChild(gameOverMessage);
+    document.getElementById("end-message").style.display = "block";
+    score.innerText = '';
+    timeRemaining.textContent = 60;
+    result = 0;
+    document.querySelectorAll(".mole").forEach(e => e.classList.remove('mole')); 
+   // const newHole = document.createElement('div');
+  //const replacedDiv = document.
+   
   };
   const countDown = () => {
     currentTime--;
     timeRemaining.textContent = currentTime;
     if (currentTime === 0) {
       clearInterval(timerId);
-      background.pause();
+     // background.pause();
       clearInterval(moleTimerId);
-      endGameScreen();
+      gameOverTask();
     }
   };
   let timerId = setInterval(countDown, 1000);
@@ -62,5 +80,8 @@ const moleGame = (e) => {
   };
 
   musicButton.addEventListener("click", backgroundMusic);
-};
-startButton.addEventListener("click", moleGame);
+}
+
+startButton.addEventListener("click", moleGame);  
+
+ 

@@ -18,18 +18,20 @@
 .mole {
   background-image: url("img/Mole.png");
   background-size: cover;
+  
 }
 .button {
-  padding: 15px 25px;
+  padding: 10px 24px;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #04aa6d;
+  background-color: rgb(75,128,99);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 5px 8px #999;
+  font-family: sans-serif;
 }
 
 .button:hover {
@@ -46,24 +48,49 @@ body {
 }
 h1 {
   text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  color: rgb(75,128,99);
+  font-size: 500%;
 }
 h2 {
   text-align: left;
+  font-family: sans-serif;
 }
 #mute-bar {
   display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: column-reverse;
+  align-content: center;
 }
 #end-message {
   display: flex;
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  font-size: 300%;
 }
 #control {
   display: flex;
   align-content: stretch;
-  justify-content: flex-end;
-  background-color: rgb(203, 195, 141);
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(234, 183, 122);
+  font-family: sans-serif;
 }
 .screen {
   background-color: rgb(141, 138, 103);
+}
+
+#score{
+  text-align: center;
+  font-family: sans-serif;
+}
+.time{
+  display:inline-block;
+}
+h4{
+  color:white;
+}
+audio{
+  padding-top: 1em;
+  margin-top: 2em;
 }
