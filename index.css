@@ -96,9 +96,3 @@ audio {
   padding-top: 1em;
   margin-top: 2em;
 }
-.title-art {
-  display: flex;
-  justify-content: space-between;
-  width: 200%;
-  height: 200%;
-}
