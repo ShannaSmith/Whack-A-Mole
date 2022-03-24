@@ -7,7 +7,7 @@ Source: WIKIPEDIA https://en.wikipedia.org/wiki/Whac-A-Mole
 --
 
 
-##Game Preview
+## Game Preview
 
 ## Credits
 ### Music
