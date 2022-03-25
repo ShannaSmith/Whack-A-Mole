@@ -20,12 +20,11 @@ This is a web application of Whac-A-Mole. The gameboard consists of nine holes. 
 **ECMAScript (JavaScript)6**, **HTML5**, **CSS3**
 
 ## Getting Started
-1. Copy and Paste https://ShannaSmith.github.io/Whack-A-Mole into your browser
-2. Press the 'enter/Return' key on your keyboard
-3. click the 'start button , located at the left bottom of the screen, to begin the game
-4. click the 'Music' button located at the bottom of the screen, to turn on background music ( default is off)
-5. click the unmute speaker symbol, located at the lower right bottom of the screen, to turn on the sound effect
-6. To replay click the 'start' button
+1. Click  https://ShannaSmith.github.io/Whack-A-Mole or copy and paste the link into your browser and then Press the 'enter/Return' key on your keyboard
+2. click the 'start button , located at the left bottom of the screen, to begin the game
+3. click the 'Music' button located at the bottom of the screen, to turn on background music ( default is off)
+4. click the unmute speaker symbol, located at the lower right bottom of the screen, to turn on the sound effect
+5. To replay click the 'start' button
 
 
  ## Credits
