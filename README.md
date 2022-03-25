@@ -7,8 +7,8 @@ Mogura Taiji (モグラ退治, "Mole Buster'') was invented in 1975 by Kazuo Yam
 Source: WIKIPEDIA https://en.wikipedia.org/wiki/Whac-A-Mole 
 --
 
---
-
+## Description
+This is a web application of Whac-A-Mole. The gameboard consists of nine holes. The objective is to hit the mole as he appears in each hole. The challenge is to monitor all nine holes and to quickly whack the mole before he disappears. You earn ten points for each mole you whack. You have sixty seconds to whack as many moles as you can. The more moles you whack the higher your score!
 
 ## Game Preview
 
@@ -16,7 +16,20 @@ Source: WIKIPEDIA https://en.wikipedia.org/wiki/Whac-A-Mole
 ![whackAMoleGamePlay](https://user-images.githubusercontent.com/87396782/160042761-7ec535f2-5c21-47f4-82e9-a0e154caad91.jpeg)
 ![whackAMoleEndGame](https://user-images.githubusercontent.com/87396782/160042776-33016a9a-86a8-4e74-866e-ff6d7e708642.jpeg)
 
-## Credits
+## Technologies Used
+**ECMAScript (JavaScript)6**, **HTML5**, **CSS3**
+
+## Getting Started
+1. Copy and Paste https://ShannaSmith.github.io/Whack-A-Mole into your browser
+2. Press the 'enter/Return' key on your keyboard
+3. click the 'start button , located at the left bottom of the screen, to begin the game
+4. click the 'Music' button located at the bottom of the screen, to turn on background music ( default is off)
+5. click the unmute speaker symbol, located at the lower right bottom of the screen, to turn on the sound effect
+6. To replay click the 'start' button
+
+
+ ## Credits
+ 
 ### Music:
 Monkeys Spinning Monkeys Kevin MacLeod (incompetech.com)
 Licensed under Creative Commons: By Attribution 3.0 License
