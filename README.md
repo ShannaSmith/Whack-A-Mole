@@ -8,7 +8,7 @@ Source: WIKIPEDIA https://en.wikipedia.org/wiki/Whac-A-Mole
 --
 
 ## Description
-This is a web application of Whac-A-Mole. The gameboard consists of nine holes. The objective is to hit the mole as he appears in each hole. The challenge is to monitor all nine holes and to quickly whack the mole before he disappears. You earn ten points for each mole you whack. You have sixty seconds to whack as many moles as you can. The more moles you whack the higher your score!
+This is a web application game of Whac-A-Mole. The gameboard consists of nine holes. The objective is to hit the mole as he appears in each hole. The challenge is to monitor all nine holes and to quickly whack the mole before he disappears. You earn ten points for each mole you whack. You have sixty seconds to whack as many moles as you can. The more moles you whack the higher your score!
 
 ## Game Preview
 
@@ -17,17 +17,18 @@ This is a web application of Whac-A-Mole. The gameboard consists of nine holes. 
 ![whackAMoleEndGame](https://user-images.githubusercontent.com/87396782/160042776-33016a9a-86a8-4e74-866e-ff6d7e708642.jpeg)
 
 ## Technologies Used
-**ECMAScript (JavaScript)6**, **HTML5**, **CSS3**
+  **ECMAScript (JavaScript)6**, **HTML5**, **CSS3**
 
 ## Getting Started
 1. Click  https://ShannaSmith.github.io/Whack-A-Mole or copy and paste the link into your browser and then Press the 'Enter/Return' key on your keyboard
-2. click the 'start button , located at the left bottom of the screen, to begin the game
-3. click the 'Music' button located at the bottom of the screen, to turn on background music ( default is off)
-4. click the unmute speaker symbol, located at the lower right bottom of the screen, to turn on the sound effect
+2. Click the 'start button , located at the left bottom of the screen, to begin the game
+3. Click the 'Music' button located at the bottom of the screen, to turn on background music ( default is off)
+4. Click the unmute speaker symbol, located at the lower right bottom of the screen, to turn on the sound effect (default is off)
 5. To replay click the 'start' button
+6. Enjoy the game!
 
 ## Planned Future Enhancements
-* Add levels of difficulty (beginner, Intermediate, Advanced) Increasing the speed that moles moves from circle.
+* Add levels of difficulty (beginner, Intermediate, Advanced) Increasing the speed that moles move from circles.
 * Add state to track the player's highest score.
 
 
