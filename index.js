@@ -15,8 +15,6 @@ let currentTime = parseInt(timeRemaining.textContent);
 
 const moleGame = (e) => {
   document.getElementById("end-message").style.display = "none";
-  //gameOver.innerText = "";
-  //gameOverMessage.innerText = "";
   const randomHole = (e) => {
     hole.forEach((className) => {
       className.classList.remove("mole");
@@ -57,15 +55,12 @@ const moleGame = (e) => {
     document
       .querySelectorAll(".mole")
       .forEach((e) => e.classList.remove("mole"));
-    // const newHole = document.createElement('div');
-    //const replacedDiv = document.
   };
   const countDown = () => {
     currentTime--;
     timeRemaining.textContent = currentTime;
     if (currentTime === 0) {
       clearInterval(timerId);
-      // background.pause();
       clearInterval(moleTimerId);
       gameOverTask();
     }
