@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+/* styling for holes*/
 .hole {
   border-radius: 50%;
   width: 150px;
@@ -8,6 +9,7 @@
   border-style: dashed;
   border-color: rgb(144, 98, 19);
 }
+/* creates Hole layout for gameboard*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -15,10 +17,12 @@
   row-gap: 2em;
   background-image: url("https://i.imgur.com/FQg4lTE.jpg");
 }
+/* This introduces the mole element*/
 .mole {
   background-image: url("img/Mole.png");
   background-size: cover;
 }
+/*creates animated buttons, apperars to move up/down */
 .button {
   padding: 10px 24px;
   font-size: 20px;
@@ -32,7 +36,7 @@
   box-shadow: 0 5px 8px #999;
   font-family: sans-serif;
 }
-
+/* creates hoover effect for buttons*/
 .button:hover {
   background-color: #3e8e41;
 }
@@ -55,12 +59,14 @@ h2 {
   text-align: left;
   font-family: sans-serif;
 }
+/* mute bar alignment*/
 #mute-bar {
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
   align-content: center;
 }
+/* End Game message styling*/
 #end-message {
   display: flex;
   font-family: "Luckiest Guy", cursive;
@@ -70,6 +76,7 @@ h2 {
   padding-bottom: 1em;
   color: rgb(255, 252, 240);
 }
+/*start and background music button alignment*/
 #control {
   display: flex;
   align-content: stretch;
@@ -78,6 +85,7 @@ h2 {
   background-color: rgb(234, 183, 122);
   font-family: sans-serif;
 }
+/*End Game background color*/
 .screen {
   background-color: rgb(51, 132, 76);
 }
@@ -92,6 +100,7 @@ h2 {
 h4 {
   color: white;
 }
+/*Sound effect control bar styling*/
 audio {
   padding-top: 1em;
   margin-top: 2em;
