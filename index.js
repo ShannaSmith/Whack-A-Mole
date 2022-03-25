@@ -23,7 +23,7 @@ const moleGame = (e) => {
     hole.forEach((className) => {
       className.classList.remove("mole");
     });
-// generates a random number 1-9 to be id
+    // generates a random number 1-9 to be id
     let randomPosition = hole[Math.floor(Math.random() * 9)];
     randomPosition.classList.add("mole");
     hitPosition = randomPosition.id;
@@ -38,9 +38,9 @@ const moleGame = (e) => {
       }
     });
   });
-//sets speed of the mole
+  //sets speed of the mole
   let moleTimerId = setInterval(randomHole, 1000);
-// displays end game message, stops game function
+  // displays end game message, stops game function
   const gameOverTask = () => {
     currentTime = 60;
     gameOver.innerText = "GAME OVER!";
@@ -73,16 +73,16 @@ const moleGame = (e) => {
   };
   //sets the speed of countdown, creating a timer
   let timerId = setInterval(countDown, 1000);
-//function called by backgroundmusic function if ternary function condition is met
+  //function called by backgroundmusic function if ternary function condition is met
   const stopBackgroundMusic = () => {
     background.pause();
   };
-//function called by event listener to determine whether button turns music on or off
+  //function called by event listener to determine whether button turns music on or off
   const backgroundMusic = () => {
     background.paused ? background.play() : stopBackgroundMusic();
     return;
   };
-//background music button event listener
+  //background music button event listener
   musicButton.addEventListener("click", backgroundMusic);
 };
 // start button event listner, calls molegame function
